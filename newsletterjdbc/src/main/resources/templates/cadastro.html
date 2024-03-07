@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+<body>
+  <form method="post" th:action="@{/cadastro}">
+    <div class="container">
+        <h1>Cadastro</h1>
+        <p>Preencha o formulário para se cadastrar</p>
+        <hr>
+
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Insira seu Email" name="email" id="email" required>
+
+        <label for="senha"><b>Senha</b></label>
+        <input type="password" placeholder="Insira sua senha" name="senha" id="senha" required>
+
+        <label for="repeatSenha"><b>Repita sua senha</b></label>
+        <input type="password" placeholder="Insira sua senha novamente" name="repeatSenha" id="repeatSenha" required>
+        <hr>
+
+        <p>Você está criando sua conta de acordo com <a href="#">Termos & Privacidade</a>.</p>
+        <button type="submit" class="registerbtn">Cadastrar</button>
+    </div>
+
+    <div class="container signin">
+        <p>Já tem conta? <a href="#">Login</a>.</p>
+    </div>
+</form>
+
+</body>
+</html>

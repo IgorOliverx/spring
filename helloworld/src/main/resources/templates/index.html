@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th=http://thymeleaf.org>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+<h1>eduardo ananias de campos junior  </h1>
+    <span th:text="${msg}"></span>
+    <br>
+
+    <form action="" method="post">
+        Buscar: <input type="text" name="buscar" id="buscar">
+        <button type="submit">Enviar</button>
+    </form>
+    <span th:if="${buscar}">O valor da busca é:<span th:text="${buscar}">
+    </span> </span>
+</body>
+</html>
